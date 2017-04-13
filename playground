@@ -3,4 +3,3 @@ echo installing
 find .bashrc -maxdepth 0 -empty -exec echo "alias ansshot=\"adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ./ansshot-\`date +%Y%m%d%H%M%S\`.png"\" >> .bashrc \;
 source ~/.bashrc
 echo Completed! Cool, now you can use ansshot command
-done
